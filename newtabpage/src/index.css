@@ -15,9 +15,24 @@ body {
     box-sizing: border-box;
     padding: 30px;
     flex-direction: column;
+    background-color: #ffc067;
+    opacity: 0.8;
+    background: repeating-linear-gradient(
+        -45deg,
+        #eeeeee,
+        #eeeeee 5px,
+        #ffc067 5px,
+        #ffc067 25px
+    );
+}
+
+.maincontainer > img {
+    width: 3.5vw;
+    margin-bottom: 10px;
 }
 
 .searchbar {
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,10 +59,12 @@ body {
     padding: 10px;
     box-sizing: border-box;
     font-size: 1.5rem;
+    font-family:
+        "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .searchbar:focus-within {
-    border-color: blue;
+    border-color: #67a6ff;
 }
 
 .searchbar:hover {
@@ -56,4 +73,42 @@ body {
 
 .searchbar input:focus {
     outline: none;
+}
+
+.suggestions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    border-radius: 10px;
+    background-color: white;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.suggestion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    transition: background-color 0.1s ease-in;
+    font-size: 1.2rem;
+    font-family:
+        "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.suggestion:not(:first-child) {
+    border-top: 1px solid grey;
+}
+
+.suggestion:hover {
+    cursor: pointer;
+    background-color: #eeeeee;
+}
+
+.suggestion.focused {
+    background-color: #e5e5e5;
 }
