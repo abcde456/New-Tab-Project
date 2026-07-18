@@ -26,4 +26,30 @@ body {
     border-radius: 20px;
     border: 1px solid grey;
     padding: 5px;
+    overflow: hidden;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.searchbar svg {
+    color: grey;
+}
+
+.searchbar input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+.searchbar:focus-within {
+    border-color: blue;
+}
+
+.searchbar input:focus {
+    outline: none;
 }
