@@ -1,0 +1,29 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.maincontainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding: 5px;
+}
