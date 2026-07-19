@@ -19,8 +19,8 @@ I used Vite + React for the actual web page itself, and then DuckDuckGo API for 
 
 I wouldn't be able to simply call the API from the client, as CORS would block it, and when it is hosted on github pages, it is purely static, meaning CORS would still block it. The only way around this was to have a server call it, and that's why I used cloudflare workers as a proxy for the API call.
 
-![Diagram](readme-assets\diagram.svg#gh-light-mode-only)
-![Diagram](readme-assets\diagram-darkmode.svg#gh-dark-mode-only)
+![Diagram](readme-assets/diagram.svg#gh-light-mode-only)
+![Diagram](readme-assets/diagram-darkmode.svg#gh-dark-mode-only)
 
 # Future Features Planned:
 
